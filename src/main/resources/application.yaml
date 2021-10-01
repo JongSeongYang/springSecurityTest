@@ -1,0 +1,17 @@
+spring:
+  # 개발용 db
+  datasource:
+    url: jdbc:mariadb://192.168.0.5:3306/hotelorder
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: root1234
+  jpa:
+    open-in-view: false
+    generate-ddl: false
+    show-sql: true
+#    hibernate:
+#      ddl-auto: create
+
+    properties:
+      hibernate:
+        format_sql: true
